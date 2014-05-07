@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+
+    "name": "OAuth2 test",
+    "description": "This extension demonstrates a oauth2 chrome plugin to shanbay.com.",
+    "version": "1.0",
+
+    "permissions": [
+        "tabs",
+        "https://api.shanbay.com/"
+    ],
+    
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title":"defualt title",
+        "default_popup":"popup.html"
+    },
+
+    "background":{
+        "scripts":["lib/config.js", "lib/shanbay_oauth2.js", "js/background.js"]
+    }    
+}
